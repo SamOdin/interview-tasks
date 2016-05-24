@@ -1,9 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="app">
 <head>
+	<base href="/">
+	<meta charset="utf-8">
 	<title>charts</title>
+	<link href="vendors/angular-chart/angular-chart.css" rel="stylesheet">
 </head>
 <body>
-	<script src="client.js"></script>
+
+ 	<div data-ui-view="layout"></div>
+
+	<script type="text/javascript" src="vendors/angular/angular.min.js"></script>
+	<script type="text/javascript" src="vendors/chart/Chart.js"></script>
+	<script type="text/javascript" src="vendors/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="vendors/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="vendors/angular-socket-io-master/socket.js"></script>
+	<script type="text/javascript" src="vendors/angular-chart/angular-chart.js"></script>
+	<script type="text/javascript" src="vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="vendors/angular-ui-router-styles/ui-router-styles.js"></script>
+	<script type="text/javascript" src="vendors/oclazyload/dist/ocLazyLoad.min.js"></script>
+
+	<script type="text/javascript" src="app/config/routers.js"></script>
+	<script type="text/javascript" src="app/config/modules.js"></script>
+	<script type="text/javascript" src="app/config/client.js"></script>
 </body>
 </html>
